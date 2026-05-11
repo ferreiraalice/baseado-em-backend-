@@ -32,6 +32,15 @@ function calcularTotal(listaPedido) {
     return total;
 }
 
+function calcularComDesconto(total, clienteObj){
+    if (clienteObj.fidelidade === true){
+        let desconto = tota * 0.10;
+        console.log(`Desconto fidelidade: R${desconto}`);
+        return total - desconto;
+    }
+    return total;
+}
+
 function exibirPedido(listaPedido) {
     console.log("=== SEU PEDIDO ===");
     console.log (`1. ${listaPedido[0].nome} - R$ ${listaPedido[0].preco}`);
