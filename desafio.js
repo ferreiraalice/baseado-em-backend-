@@ -7,12 +7,14 @@ const dataNascimento = "2010-05-15"
 const statusMatricula = "Ativa"
 
 let notaMatematica = 8
-let notaPortuguês = 6
+let notaPortuguês = 7
+let notahistoria = 5
+let notaquimica = 6
 
-let somaDasnotas = notaMatematica + notaPortuguês
+let somaDasnotas = notaMatematica + notaPortuguês + notahistoria + notaquimica 
 let mediaFinal = somaDasnotas / 2
 
-console.log (`a nota dele em matematica e ${notaMatematica} e a nota em português e ${notaPortuguês} e a media dessas notas é ${mediaFinal}`)
+console.log (`a nota dele em matematica e ${notaMatematica} e a nota em português e ${notaPortuguês} e a nota ${notahistoria} e a nota ${notaquimica} a media dessas notas é ${mediaFinal}`)
 
 console.log ( `
     o nome completo dele é ${nomeCompleto}, ele nasceu em ${dataNascimento}, o email de contato é ${emailContato},
